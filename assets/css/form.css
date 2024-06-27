@@ -1,0 +1,133 @@
+* {
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: ghostwhite;
+    transition: background-color 0.3s ease;
+}
+
+.dark-mode {
+    background-color: darkslategray;
+    color: wheat;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 80%;
+    border: 2px solid #000;
+}
+
+.container.dark-mode {
+    background-color: wheat;
+    border-color: wheat;
+    color: red;
+}
+
+.left-panel, .right-panel {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-panel {
+    width: 50%;
+}
+
+.left-panel.dark-mode {
+    background-color: #666;
+}
+
+.circle {
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(green, yellow, red);
+    border-radius: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle h1 {
+    color: darkolivegreen;
+    font-size: 2em;
+    text-align: center;
+}
+.right-panel {
+    border-left: 2px solid #000;
+    width: 50%;
+}
+
+.right-panel.dark-mode {
+    border-color: #666;
+}
+
+h2 {
+    text-align: center;
+}
+
+form {
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input, textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: gainsboro;
+    color: #333;
+}
+
+input.dark-mode, textarea.dark-mode {
+    background-color: #444;
+    color: #eee;
+    border-color: wheat;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    color: wheat;
+    background-color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button#modeToggle {
+    width: 10%;
+    border: none;
+    background-color: #000;
+}
+button:hover {
+    background-color: green;
+}
+#modeToggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #000;
+}
+#backButton {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #000;
+    color: wheat;
+}

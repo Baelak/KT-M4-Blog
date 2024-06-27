@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 5%;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    transition: background-color 0.3s ease;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    background-color: #fff;
+    padding: 20px;
+    border: 2px solid #000;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+.container.dark-mode {
+    background-color: #444;
+    border-color: #666;
+}
+
+h1 {
+    text-align: center;
+}
+
+#postsContainer {
+    margin-top: 20px;
+}
+
+.post {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+.post.dark-mode {
+    background-color: #444;
+    color: #eee;
+    border-color: #888;
+}
+button {
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+button.dark-mode {
+    background-color: #444;
+    color: wheat;
+}
+button:hover {
+    background-color: green;
+}
+#modeToggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+#modeToggle.dark-mode {
+    background-color: #444;
+    color: #fff;
+}
+
+#backButton {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+#backButton.dark-mode {
+    background-color: #444;
+    color: #fff;
+}
+.footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+.footer a {
+    text-decoration: none;
+    background: linear-gradient(green, yellow, red);
+    color: #000;
+}

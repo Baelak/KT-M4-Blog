@@ -5,10 +5,10 @@ It takes an input from users and stores it on the local storage for later retrie
 It has a toggle to switch between dark-mode and light-mode and stores the modes on the local storage.
 It links my portfolio website
 
-![light mode of the Blog landing page](lightmode_lp.png)
-![dark mode of the Blog landing page](darkmode_lp.png)
-![light mode of the blog post page](lightmode_bp.png)
-![dark mode of the blog post page](darkmode_bp.png)
+![light mode of the Blog landing page](./images/lightmode_lp.png)
+![dark mode of the Blog landing page](./images/darkmode_lp.png)
+![light mode of the blog post page](./images/lightmode_bp.png)
+![dark mode of the blog post page](./images/darkmode_bp.png)
 
 Enjoy
 
